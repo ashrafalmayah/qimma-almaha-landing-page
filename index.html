@@ -4,10 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/output.css" />
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
         <title>قمة المها</title>
     </head>
     <body
-        class="overflow-x-clip selection:bg-secondary selection:text-white h-[100dvh] bg-[url('/assets/images/2.jpg')] grid place-items-center bg-cover bg-center before:w-[100dvw] before:h-[100dvh] before:absolute before:-z-10 before:bg-black before:opacity-30"
+        class="overflow-clip selection:bg-secondary selection:text-white h-[100dvh] bg-[url('../assets/images/2.jpg')] grid place-items-center bg-cover bg-center before:w-[100dvw] before:h-[100dvh] before:absolute before:-z-10 before:bg-black before:opacity-30"
     >
         <main
             class="text-white mx-4 pb-10 overflow-hidden bg-primary text-center font-safaa rounded-xl"
@@ -20,10 +21,10 @@
                 />
             </div>
             <div class="py-10 space-y-6 px-10 md:px-32">
-                <div class="text-xl md:text-4xl z-10 md:leading-[4rem] font-bold">
+                <div class="text-xl md:text-4xl md:leading-[4rem] font-bold">
                     أحد أكبر مناجم الفحم<br />في المملكة العربية السعودية
                 </div>
-                <div class="text-gl md:text-3xl z-10 font-bold">
+                <div class="text-gl md:text-3xl font-bold">
                     عندك أي استفسار؟
                 </div>
                 <a
@@ -43,5 +44,10 @@
                 </a>
             </div>
         </main>
+        <div
+            id="mouseFollow"
+            class="absolute rounded-full aspect-square w-10 bg-secondary opacity-40 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+        ></div>
     </body>
+    <script src="app.js"></script>
 </html>
