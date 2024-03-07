@@ -1,6 +1,14 @@
 const mouseFollow = document.getElementById("mouseFollow");
 const links = document.querySelectorAll("a");
 const logo = document.querySelector(".logo");
+const languageSwitch = document.getElementById("languageSwitch");
+
+function changeLanguage(lang) {
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang == "en" ? "ltr" : "rtl";
+    languageSwitch.checked = lang == "en" ? true : false;
+    localStorage.setItem("lang", lang);
+}
 
 function addRotate() {
     logo.classList.add("rotate");
@@ -11,7 +19,7 @@ function removeRotate() {
 }
 logo.addEventListener("mouseover", addRotate);
 logo.addEventListener("click", addRotate);
-logo.addEventListener('transitionend', removeRotate);
+logo.addEventListener("transitionend", removeRotate);
 
 document.addEventListener("mousemove", (e) => {
     mouseFollow.animate(
@@ -41,4 +49,17 @@ links.forEach((link) => {
     link.addEventListener("mouseleave", () => {
         mouseFollow.style.width = "";
     });
+});
+
+window.addEventListener("load", () => {
+    if (localStorage.getItem("lang") != null) {
+        changeLanguage(localStorage.getItem("lang"));
+    } else {
+        if (navigator.language == "ar") changeLanguage("ar");
+        else changeLanguage("en");
+    }
+});
+
+languageSwitch.addEventListener("change", () => {
+    changeLanguage(languageSwitch.checked ? "en" : "ar");
 });
