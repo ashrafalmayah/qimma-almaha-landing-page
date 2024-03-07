@@ -21,6 +21,8 @@ document.addEventListener("mousemove", (e) => {
         },
         { delay: 50, fill: "forwards" }
     );
+    // mouseFollow.style.top = `${e.clientY}px`;
+    // mouseFollow.style.left = `${e.clientX}px`;
 });
 
 document.addEventListener("mouseenter", (e) => {

@@ -848,6 +848,10 @@ video {
   width: 2.5rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -2740,16 +2744,16 @@ video {
   }
 }
 
-@media (min-width: 1280px) {
-  .xl\:grid {
+@media (min-width: 1536px) {
+  .\32xl\:grid {
     display: grid;
   }
 
-  .xl\:place-content-center {
+  .\32xl\:place-content-center {
     place-content: center;
   }
 
-  .xl\:pt-0 {
+  .\32xl\:pt-0 {
     padding-top: 0px;
   }
 }
