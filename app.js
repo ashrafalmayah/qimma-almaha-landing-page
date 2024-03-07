@@ -1,5 +1,5 @@
 const mouseFollow = document.getElementById("mouseFollow");
-const links = document.querySelectorAll("a");
+const links = document.querySelectorAll("a, label");
 const logo = document.querySelector(".logo");
 const languageSwitch = document.getElementById("languageSwitch");
 
