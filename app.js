@@ -24,7 +24,7 @@ logo.addEventListener("transitionend", removeRotate);
 document.addEventListener("mousemove", (e) => {
     mouseFollow.animate(
         {
-            top: `${e.clientY}px`,
+            top: `${e.clientY + scrollY}px`,
             left: `${e.clientX}px`,
         },
         { delay: 50, fill: "forwards" }
@@ -34,7 +34,7 @@ document.addEventListener("mousemove", (e) => {
 });
 
 document.addEventListener("mouseenter", (e) => {
-    mouseFollow.style.top = `${e.clientY}px`;
+    mouseFollow.style.top = `${e.clientY + scrollY}px`;
     mouseFollow.style.left = `${e.clientX}px`;
     mouseFollow.style.display = "";
 });

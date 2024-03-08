@@ -657,8 +657,8 @@ video {
   left: 50%;
 }
 
-.left-\[5\%\] {
-  left: 5%;
+.right-\[5\%\] {
+  right: 5%;
 }
 
 .top-\[5\%\] {
@@ -856,12 +856,12 @@ video {
   height: 80px;
 }
 
-.min-h-\[30vh\] {
-  min-height: 30vh;
+.min-h-\[40vh\] {
+  min-height: 40vh;
 }
 
-.min-h-\[70vh\] {
-  min-height: 70vh;
+.min-h-\[60vh\] {
+  min-height: 60vh;
 }
 
 .min-h-screen {
@@ -2075,10 +2075,6 @@ video {
   padding-top: 5rem;
 }
 
-.pt-\[5vh\] {
-  padding-top: 5vh;
-}
-
 .text-left {
   text-align: left;
 }
@@ -2143,9 +2139,18 @@ video {
   font-family: safaa, sans-serif;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.font-segoe {
+  font-family: Segoe UI;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-lg {
@@ -2636,14 +2641,14 @@ video {
   transition: transform 1.5s cubic-bezier(0.19, 0.8, 0.29, 1);
 }
 
-#languageSwitch:checked + .icon--moon {
+#languageSwitch:checked + .icon--arabic {
   --tw-rotate: 360deg;
   --tw-scale-x: 0;
   --tw-scale-y: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-#languageSwitch:checked ~ .icon--sun {
+#languageSwitch:checked ~ .icon--english {
   --tw-rotate: 360deg;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
@@ -2800,15 +2805,6 @@ video {
     padding-right: 0px;
   }
 
-  .sm\:text-center {
-    text-align: center;
-  }
-
-  .sm\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2831,18 +2827,28 @@ video {
     width: 2rem;
   }
 
+  .md\:pt-\[7vh\] {
+    padding-top: 7vh;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
-  .md\:leading-\[3rem\] {
-    line-height: 3rem;
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 

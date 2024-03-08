@@ -14,38 +14,44 @@
     <body
         class="overflow-x-clip selection:bg-secondary selection:text-white min-h-screen bg-[url('../assets/images/background.webp')] bg-cover bg-center before:w-[100vw] before:fixed before:h-[100vh] before:-z-10 before:bg-black before:opacity-70"
     >
-        <div class="absolute top-[5%] left-[5%] z-10">
+        <div class="absolute top-[5%] right-[5%] z-10">
             <label
-                class="bg-primary w-8 h-8 md:w-12 md:h-12 grid place-items-center cursor-pointer shadow-[0_0_50px_20px_rgba(0,0,0,0.1)] leading-none"
+                class="bg-primary w-8 h-8 rounded-md md:w-12 md:h-12 grid place-items-center cursor-pointer shadow-[0_0_50px_20px_rgba(0,0,0,0.1)] leading-none"
                 for="languageSwitch"
             >
                 <input id="languageSwitch" class="hidden" type="checkbox" />
                 <div
-                    class="w-5 md:w-8 col-[1_/_1] row-[1_/_1] [transition:transform_500ms] delay-200 icon--moon"
+                    class="w-5 md:w-8 col-[1_/_1] row-[1_/_1] [transition:transform_500ms] delay-200 icon--arabic"
                 >
                     <img src="assets/images/Arabic.png" alt="" />
                 </div>
 
                 <div
-                    class="w-5 md:w-8 col-[1_/_1] row-[1_/_1] [transition:transform_500ms] scale-0 icon--sun"
+                    class="w-5 md:w-8 col-[1_/_1] row-[1_/_1] [transition:transform_500ms] scale-0 icon--english"
                 >
                     <img src="assets/images/English.png" alt="" />
                 </div>
             </label>
         </div>
         <main
-            class="text-white pb-10 overflow-hidden text-center font-safaa rounded-xl"
+            class="text-white overflow-hidden text-center font-segoe rounded-xl"
         >
             <div
-                class="bg-primary bg-opacity-80 sm:pl-0 sm:pr-0 pl-[10%] pr-4 min-h-[30vh] pt-[5vh] relative"
+                class="bg-primary bg-opacity-80 sm:pl-0 sm:pr-0 pl-[10%] pr-4 min-h-[40vh] grid place-content-center md:block md:pt-[7vh] relative"
             >
                 <div
-                    class="hidden rtl:block font-mj_colors text-start sm:text-center text-4xl sm:text-7xl"
+                    class="hidden rtl:block font-mj_colors text-5xl md:text-7xl"
                 >
-                    منجم قمة المها
+                    قمة المها
                 </div>
-                <div class="rtl:hidden font-mj_colors text-4xl sm:text-7xl">
-                    Qemah almaha Quarry
+                <div class="hidden rtl:block font-safaa text-2xl md:text-3xl">
+                    للرخام والحجر
+                </div>
+                <div class="rtl:hidden font-mj_colors text-5xl md:text-7xl">
+                    Qemah almaha
+                </div>
+                <div class="rtl:hidden font-safaa text-2xl md:text-3xl">
+                    For marble and stone
                 </div>
                 <div
                     class="absolute top-full left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -59,10 +65,10 @@
             </div>
 
             <div
-                class="space-y-6 min-h-[70vh] px-3 grid place-content-center justify-items-center pb-4"
+                class="space-y-6 pt-20 min-h-[60vh] px-3 grid place-content-center justify-items-center pb-4"
             >
-                <div class="text-lg pt-20 md:text-xl font-bold max-w-[65ch]">
-                    <span class="hidden rtl:block md:leading-[3rem]"
+                <div class="text-lg md:text-lg font-bold max-w-[65ch]">
+                    <span class="hidden rtl:block"
                         >مرحبًا بكم في منجم قمة المها حيث يلتقي جمال الطبيعة مع
                         دقة الصناعة لإنتاج سيليكا عالية الجودة لمختلف التطبيقات.
                         في منجمنا، نجمع بين التكنولوجيا المتطورة والاحترام
@@ -83,7 +89,7 @@
                         the highest standards of purity and performance.</span
                     >
                 </div>
-                <div
+                <!-- <div
                     class="hidden rtl:block text-secondary text-gl md:text-2xl font-bold"
                 >
                     عندك أي استفسار؟
@@ -92,7 +98,7 @@
                     class="rtl:hidden text-secondary text-gl md:text-2xl font-bold"
                 >
                     Any Questions?
-                </div>
+                </div> -->
                 <a
                     class="group z-10 inline-block cursor-pointer w-full max-w-[250px] h-[80px] rounded-md overflow-hidden shadow-lg transform transition-transform duration-600 ease-in-out hover:scale-95"
                     href="https://wa.me/+966576109077"
